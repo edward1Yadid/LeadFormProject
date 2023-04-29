@@ -1,0 +1,67 @@
+
+//functions
+
+@mixin style-containerMajor (){
+width: auto;
+    min-height: 550px;
+    position: relative;
+
+}
+
+
+
+
+@mixin headder-form ($direction, $justify,$align, $gap ) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap:$gap;
+
+}
+
+@mixin translate (){
+max-width: 550px;
+min-height: 450px;
+position: absolute;
+transform: translate(-290px, -19.25rem);
+margin-right: 20px;
+
+}
+
+
+@mixin mediaQuery1 (){
+position: absolute;
+transform: translate(-200px, -17.25rem);
+
+
+}
+@mixin mediaQuery2 (){
+position: absolute;
+transform: translate(-190px, -16.25rem);
+
+
+}
+@mixin mediaQuery3 (){
+position: absolute;
+transform: translate(-170px, -15.25rem);
+
+
+}
+@mixin mediaQuery4 (){
+position: absolute;
+transform: translate(-150px, -14.25rem);
+
+
+}
+
+
+@mixin mediaQuery5($translate){
+@media screen and (min-width:500px) and (max-width:869px)  {
+    position: absolute;
+transform:$translate;
+}
+
+
+
+}

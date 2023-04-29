@@ -1,0 +1,231 @@
+
+@use "colors" as color;
+@use "functions" as functioins-1;
+
+
+
+.container-1{
+@include functioins-1.style-containerMajor ();
+max-width: 1920px;
+  min-height: 600px;
+  color: color.$main-color;
+@media screen and (min-width:1px) and (max-width:1690px) {
+    margin: 0;
+width: 100%;
+}
+
+}
+img{
+    background-position: 100%;
+  background-repeat: no-repeat, repeat;
+
+
+}
+
+.img-1{
+max-height: 400px;
+clip-path: inset(0 8% 3% 8%);
+width: 100%;
+ @media screen and (min-width:500px) and (max-width:1690px) {
+
+max-width: 100%;
+min-height: 300px;
+clip-path: inset(0 0  0 0);
+  padding: 0;
+ }
+@media screen and (min-width:300px) and (max-width:869px){
+  width: 100%;
+clip-path: inset(0 0 0 0);
+ }
+@media screen and (min-width:319px) and (max-width:429px) {
+height: 200px;
+
+
+}
+@media screen and (max-width:319px){
+min-height: 170px;
+clip-path: inset(0 0 3% 0)
+}
+}
+.header-form{
+@include functioins-1.headder-form(column,center,center,.11rem);
+max-width: 320px;
+margin-right: 45px;
+margin-bottom: 20px
+
+}
+
+
+.major-form{
+  @include functioins-1.translate();
+  background:color.$backround-color;
+  opacity: 0.9;
+
+ @media screen and (min-width:1284px) and (max-width:1690px) {
+position: absolute;
+transform: translate(-200px, -17.25rem);
+}
+
+  @media screen and (min-width:1153px) and (max-width:1283px) {
+position: absolute;
+transform: translate(-190px, -17.25rem);
+
+  }
+
+
+@media screen and (min-width:1100px) and (max-width:1152px) {
+position: absolute;
+transform: translate(-170px, -15.25rem);
+}
+
+@media screen and (min-width:500px) and (max-width:1120px)  {
+
+max-width: 300px;
+min-height: 450px;
+position: absolute;
+transform: translate(-135px, -13.25rem);
+
+}
+@media screen and (min-width:430px) and (max-width:499px)  {
+
+max-width: 300px;
+min-height: 450px;
+position: absolute;
+transform: translate(-100px, -6.25rem);
+
+}
+@media screen and (min-width:320px) and (max-width:429px) {
+  
+
+transform: translate(-60px, -8.25rem);
+}
+
+@media screen and (max-width:319px) {
+width:190px;
+min-height: 450px;
+position: absolute;
+transform: translate(-20px, -7.25rem);
+padding: 0 5px
+}
+}
+
+.control-form{
+@include functioins-1.headder-form(column,center,start,$gap:unset);
+padding: 5px;
+max-width: 3250px;
+margin-right: 20px;
+
+padding: 4px;
+
+@media screen and (min-width:500px) and (max-width:1120px){
+min-width: 150px;
+padding: 15px;
+margin:0 20px;
+}
+@media screen and (min-width:320px) and (max-width:499px){
+width: 200px;
+margin-right: 20px;
+
+}
+@media screen and (max-width:319px){
+width: 100px;
+margin-right: 10px;
+}
+}
+
+#email, #fullname{
+  width: 250px;
+  padding: 6px;
+@media screen and (min-width:500px) and (max-width:1120px){
+  width: 200px;
+   border: 1px solid color.$button-color;
+}
+@media screen and (min-width:320px) and (max-width:499px){
+width: 150px;
+   border: 1px solid color.$button-color;
+
+}
+@media screen and (max-width:319px){
+width: 150px;
+  border: 1px solid color.$button-color;
+}
+}
+
+p{
+width: 310px;
+  text-align: right;
+  letter-spacing: 0;
+  margin-right: -22px;
+
+@media screen and (min-width:500px) and (max-width:1120px){
+  width: 200px;
+  text-align: start;
+margin-right: -50px; ;
+}
+@media screen and (min-width:320px) and (max-width:499px){
+width: 200px;
+  text-align: start;
+
+}
+@media screen and  (max-width:319px) {
+
+width: 150px;
+  text-align: start;
+
+}
+@media screen and (max-width:319px){
+width: 160px;
+  text-align: start;
+
+  
+
+}
+}
+
+.button-1{
+background:color.$button-color;
+padding: 7px 35px;
+border-style: none;
+color: color.$main-color;
+font-weight: bold;
+margin-top: 25px;
+@media screen and (min-width:500px) and (max-width:1120px){
+ margin-top: 0;
+padding: 7px 25px;
+}
+@media screen and (max-width:319px){
+padding: 5px 20px;
+
+}
+}
+
+h1{
+ width: 250px;
+  margin-top: 30px;
+  font-size: 1.35rem;
+text-align: start;
+margin-right: -62px;
+@media screen and (min-width:500px) and (max-width:1120px){
+  width: 200px;
+  text-align: center;
+}
+@media screen and (min-width:320px) and (max-width:499px){
+width: 200px;
+text-align: center;
+
+}
+@media screen and (max-width:319px) {
+width: 120px;
+text-align: center;
+font-size: 1.1rem;
+
+
+
+}
+}
+
+
+
+
+
+
