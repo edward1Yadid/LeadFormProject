@@ -1,4 +1,4 @@
-# landing-page-6
+# LeadFormProject
 This is a login screen/landing page for the Leadind-2 project. 
 This project was built using pure HTML5 & CSS3 & SASS. 
 his project as the other is fully responsive, so you can use it on mobile such as the desktop.
